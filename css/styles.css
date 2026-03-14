@@ -130,22 +130,22 @@ nav {
 .about-container {
     display: flex;
     align-items: center;
-    gap: 2rem; /* space between text and image */
-    flex-wrap: wrap; /* keeps it responsive on smaller screens */
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .about-text {
-    flex: 1; /* text takes available space */
+    flex: 1 1 400px; /* text can shrink but has minimum space */
 }
 
 .about-image {
-    flex: 0 0 200px; /* image takes fixed width */
+    flex: 0 0 auto; /* image keeps its own width */
 }
 
 .profile-img {
-    width: 100%;
-    max-width: 200px; /* prevents it from being too large */
-    border-radius: 10px;
+    width: 150px;       /* fixed width you want */
+    height: 150px;      /* keep square ratio */
+    border-radius: 50%; /* circular photo optional */
     object-fit: cover;
 }
 
