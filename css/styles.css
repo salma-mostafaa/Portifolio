@@ -130,18 +130,17 @@ nav {
 
 .about-container {
     display: flex;
-    align-items: center; /* vertically center text & image */
-    justify-content: flex-start;
+    align-items: center;
     gap: 2rem; /* space between text and image */
-    flex-wrap: nowrap; /* forces image and text to stay side by side */
+    flex-wrap: wrap; /* keeps it responsive on smaller screens */
 }
 
 .about-text {
-    flex: 1; /* takes remaining space */
+    flex: 1; /* text takes available space */
 }
 
 .about-image {
-    flex: 0 0 250px; /* fixed width for the image */
+    flex: 0 0 200px; /* image takes fixed width */
 }
 
 .profile-img {
