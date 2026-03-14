@@ -144,6 +144,7 @@ nav {
 
 .profile-img {
     width: 100%;
+    max-width: 200px; /* prevents it from being too large */
     border-radius: 10px;
     object-fit: cover;
 }
