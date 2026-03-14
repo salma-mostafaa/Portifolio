@@ -127,19 +127,21 @@ nav {
     background: rgba(123,44,191,0.15);
 }
 
-.about-container .about-container {
+
+.about-container {
     display: flex;
-    align-items: center;
+    align-items: center; /* vertically center text & image */
+    justify-content: flex-start;
     gap: 2rem; /* space between text and image */
-    flex-wrap: wrap; /* keeps it responsive on smaller screens */
+    flex-wrap: nowrap; /* forces image and text to stay side by side */
 }
 
 .about-text {
-    flex: 1; /* text takes available space */
+    flex: 1; /* takes remaining space */
 }
 
 .about-image {
-    flex: 0 0 200px; /* image takes fixed width */
+    flex: 0 0 250px; /* fixed width for the image */
 }
 
 .profile-img {
