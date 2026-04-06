@@ -34,3 +34,18 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+
+// contact form (mailto)
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = this[0].value;
+    const email = this[1].value;
+    const message = this[2].value;
+
+    const subject = `Message from ${name}`;
+    const body = `Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+
+    window.location.href = `mailto:salma.mostafa5x@gmail.com?subject=${subject}&body=${body}`;
+});
